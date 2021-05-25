@@ -1,3 +1,5 @@
+import 'package:covinfo/authentication/presentation/screen/login/login_screen.dart';
+import 'package:covinfo/authentication/presentation/screen/signUp/signUp_screen.dart';
 import 'package:covinfo/authentication/presentation/screen/splash/widget/widget.dart';
 import 'package:covinfo/constants.dart';
 import 'package:flutter/material.dart';
@@ -23,12 +25,16 @@ class SplashScreen extends StatelessWidget {
                 height: 50.0,
               ),
               Button(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, LoginScreen.id);
+                },
                 color: Colors.blue.shade900,
                 title: "Log In",
               ),
               Button(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, SignUpScreen.id);
+                },
                 color: Colors.red,
                 title: "Sign Up",
               )
