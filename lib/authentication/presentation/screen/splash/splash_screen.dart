@@ -12,25 +12,28 @@ class SplashScreen extends StatelessWidget {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Logo(),
-            SizedBox(
-              height: 50.0,
-            ),
-            Button(
-              onPressed: () {},
-              color: Colors.blue.shade900,
-              title: "Log In",
-            ),
-            Button(
-              onPressed: () {},
-              color: Colors.red,
-              title: "Sign Up",
-            )
-          ],
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Logo(),
+              SizedBox(
+                height: 50.0,
+              ),
+              Button(
+                onPressed: () {},
+                color: Colors.blue.shade900,
+                title: "Log In",
+              ),
+              Button(
+                onPressed: () {},
+                color: Colors.red,
+                title: "Sign Up",
+              )
+            ],
+          ),
         ),
       ),
     );
