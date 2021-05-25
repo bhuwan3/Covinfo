@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515775769274",
+    "project_id": "covinfo-5d852",
+    "storage_bucket": "covinfo-5d852.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515775769274:android:b793b03292070ee467b083",
+        "android_client_info": {
+          "package_name": "com.covinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515775769274-58rk98bvf1piianlen1e5mpb1ii9740g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlcNCd_V4ddWiQKEs9KhWmZkBwXC2yP6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515775769274-58rk98bvf1piianlen1e5mpb1ii9740g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
