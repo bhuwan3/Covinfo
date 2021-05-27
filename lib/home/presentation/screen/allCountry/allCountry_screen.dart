@@ -1,5 +1,6 @@
 import 'package:covinfo/authentication/presentation/screen/loading/loading_screen.dart';
 import 'package:covinfo/constants.dart';
+import 'package:covinfo/home/presentation/screen/beSafe/beSafe_screen.dart';
 import 'package:covinfo/home/presentation/screen/india/india_screen.dart';
 import 'package:covinfo/home/presentation/screen/news/news_screen.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -133,7 +134,8 @@ class _AllCountryScreenState extends State<AllCountryScreen> {
             ),
             NewsScreen(
               newsData: widget.newsData,
-            )
+            ),
+            BeSafeScreen(),
           ]),
       bottomNavigationBar: Container(
         height: 80.0,

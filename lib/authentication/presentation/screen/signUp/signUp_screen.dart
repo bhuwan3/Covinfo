@@ -28,20 +28,29 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   var indiaData;
 
+  var newsData;
+
   getCountryData() async {
     http.Response response = await http.get(
         "https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true");
     http.Response indiaResponse = await http.get(
         "https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true");
-    if (response.statusCode == 200 && indiaResponse.statusCode == 200) {
+    http.Response newsResponse = await http.get(
+        "https://newsapi.org/v2/everything?q=COVID&from=2021-05-26&sortBy=popularity&apiKey=bfc200c649eb4d9e9c1c2a5b71675d92&pageSize=40&page=2");
+    if (response.statusCode == 200 &&
+        indiaResponse.statusCode == 200 &&
+        newsResponse.statusCode == 200) {
       String data = response.body;
       String iData = indiaResponse.body;
+      String nData = newsResponse.body;
       countryData = jsonDecode(data);
       indiaData = jsonDecode(iData);
-      Navigator.push(context, MaterialPageRoute(builder: (context) {
+      newsData = jsonDecode(nData);
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
         return AllCountryScreen(
           countryData: countryData,
           indiaData: indiaData,
+          newsData: newsData,
         );
       }));
     } else {

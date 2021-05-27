@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class NewsScreen extends StatelessWidget {
   NewsScreen({this.newsData});
   final newsData;
-  static String id = "india_screen";
+  static String id = "news_screen";
   @override
   Widget build(BuildContext context) {
     return Container(
