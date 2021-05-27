@@ -36,7 +36,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       countryData = jsonDecode(data);
       indiaData = jsonDecode(iData);
       newsData = jsonDecode(nData);
-      Navigator.push(context, MaterialPageRoute(builder: (context) {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
         return AllCountryScreen(
           countryData: countryData,
           indiaData: indiaData,
