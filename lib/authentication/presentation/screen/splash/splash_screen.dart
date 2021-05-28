@@ -26,14 +26,14 @@ class SplashScreen extends StatelessWidget {
               ),
               Button(
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, LoginScreen.id);
+                  Navigator.pushNamed(context, LoginScreen.id);
                 },
                 color: Colors.blue.shade900,
                 title: "Log In",
               ),
               Button(
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, SignUpScreen.id);
+                  Navigator.pushNamed(context, SignUpScreen.id);
                 },
                 color: Colors.red,
                 title: "Sign Up",
