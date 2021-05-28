@@ -39,7 +39,7 @@ This is how the application looks when you run it.
 
 ### OR
 
-[PilgrimageApp.apk](https://drive.google.com/file/d/1yegEmjdYdknL3_XX3o4T16CtwBln85ue/view?usp=sharing)
+[Covinfo.apk](https://drive.google.com/file/d/1yegEmjdYdknL3_XX3o4T16CtwBln85ue/view?usp=sharing)
 
 
 ## Authors:
