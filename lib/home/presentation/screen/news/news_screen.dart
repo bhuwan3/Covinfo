@@ -25,7 +25,7 @@ class NewsScreen extends StatelessWidget {
                 child: Text(
                   "Covid News",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.green,
                     fontSize: 35.0,
                     fontWeight: FontWeight.bold,
                   ),
